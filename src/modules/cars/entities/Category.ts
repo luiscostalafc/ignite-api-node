@@ -5,10 +5,13 @@ import { v4 as uuidV4 } from "uuid";
 class Category {
   @PrimaryColumn()
   id?: string;
+
   @Column()
   name: string;
+
   @Column()
   description: string;
+
   @CreateDateColumn()
   created_at: Date;
 
