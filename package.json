@@ -10,6 +10,7 @@
     "pg": "^8.6.0",
     "reflect-metadata": "^0.1.13",
     "swagger-ui-express": "^4.1.6",
+    "tsyringe": "^4.5.0",
     "typeorm": "^0.2.34",
     "uuid": "^8.3.2"
   },
@@ -24,6 +25,7 @@
     "@types/uuid": "^8.3.0",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
+    "babel-plugin-transform-typescript-metadata": "^0.3.2",
     "eslint": "^7.24.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.1.0",
