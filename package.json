@@ -22,7 +22,8 @@
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
     "test": "jest",
-    "migrate": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli migration:run"
+    "migrate": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli migration:run",
+    "seed:admin": "ts-node-dev src/shared/infra/typeorm/seed/admin.ts"
   },
   "devDependencies": {
     "@types/express": "^4.17.11",
