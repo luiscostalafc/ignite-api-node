@@ -16,12 +16,11 @@ class ListAvailableCarsUseCase {
     private carsRepository: ICarsRepository
   ) {}
 
-  async execute({ name, brand, category_id }: IRequest): Promise<Car[]> {
-    console.log({ name });
+  async execute({ brand, category_id, name }: IRequest): Promise<Car[]> {
     const cars = await this.carsRepository.findAvailable(
-      name,
       brand,
-      category_id
+      category_id,
+      name
     );
     return cars;
   }
