@@ -30,7 +30,7 @@ describe("Create Car Specification", () => {
     }).rejects.toBeInstanceOf(AppError);
   });
 
-  it("should be able to add a new Specification to the car", async () => {
+  it("should be able to add a new specification to the car", async () => {
     const car = await carsRepositoryInMemory.create({
       name: "Name Car",
       description: "Description Car",
