@@ -1,4 +1,4 @@
-import { inject } from "tsyringe";
+import { inject, injectable } from "tsyringe";
 
 import { ICarsImagesRepository } from "@modules/cars/repositories/ICarsImagesRepository";
 
@@ -7,6 +7,7 @@ interface IRequest {
   images_name: string[];
 }
 
+@injectable()
 class UploadCarImagesUseCase {
   constructor(
     @inject("CarsImagesRepository")
